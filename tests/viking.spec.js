@@ -5,11 +5,7 @@ describe('Soldier', () => {
   const strength = 150;
   const health = 300;
 
-  constructor(){
 
-    this.strength = 150;
-    this.health = 300;
-  }
 
   beforeEach(() => {
     soldier = new Soldier(health, strength);
@@ -22,7 +18,7 @@ describe('Soldier', () => {
 
     it(this.health), () => {
       expect(soldier.health).toEqual(health);
-    });
+    };
 
     it('should receive the strength property as its 2nd argument', () => {
       expect(soldier.strength).toEqual(strength);
