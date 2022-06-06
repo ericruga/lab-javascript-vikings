@@ -5,6 +5,12 @@ describe('Soldier', () => {
   const strength = 150;
   const health = 300;
 
+  constructor(){
+
+    this.strength = 150;
+    this.health = 300;
+  }
+
   beforeEach(() => {
     soldier = new Soldier(health, strength);
   });
@@ -14,7 +20,7 @@ describe('Soldier', () => {
       expect(Soldier.length).toEqual(2);
     });
 
-    it('should receive the health property as its 1st argument', () => {
+    it(this.health), () => {
       expect(soldier.health).toEqual(health);
     });
 
