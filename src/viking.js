@@ -23,7 +23,13 @@ constructor(name, health, strength){
   this.name = name;
 }
 
-receivedDamage(){}
+receivedDamage(){
+  this.health = this,.health - damage; //this.health -= damage
+  if(this.health >= 0){
+    return `${this.name} has died in act!`
+  }
+  return `${this.name} has received ${}`
+}
 
 battleCry(){}
 
